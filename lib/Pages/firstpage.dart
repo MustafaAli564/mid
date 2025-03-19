@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mid/Api/prods.dart';
 import 'package:mid/Models/products.dart';
 import 'package:mid/Cards/itemcard.dart';
-import 'package:mid/Pages/secondpage.dart';
 
 class Firstpage extends StatefulWidget {
   const Firstpage({super.key});
@@ -55,14 +54,7 @@ class _FirstpageState extends State<Firstpage> {
                     itemBuilder: (context, index) {
                       final product = filteredProducts[index];
                       return GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Secondpage(prod: product),
-                            ),
-                          );
-                        },
+                        onTap: () {},
                         child: Itemcard(
                           title: product.title,
                           price: product.price,
