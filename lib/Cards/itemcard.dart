@@ -35,7 +35,7 @@ class Itemcard extends StatelessWidget {
                   placeholder: (context, url) => const Center(child: CircularProgressIndicator()),
                   errorWidget: (context, url, error) => const Icon(Icons.error),
                   width: double.infinity,
-                  height: 180, // Adjusted height for better proportion
+                  height: 180,
                   fit: BoxFit.fill,
                 ),
                 Row(
